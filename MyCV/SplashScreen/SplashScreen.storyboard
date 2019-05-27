@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="My8-iT-jzN">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Splash Screen View Controller-->
+        <scene sceneID="yaB-KN-58j">
+            <objects>
+                <viewController id="My8-iT-jzN" customClass="SplashScreenViewController" customModule="MyCV" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aq4-H4-eN3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gradient-blue" translatesAutoresizingMaskIntoConstraints="NO" id="4sQ-sp-nOm">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MyCV" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kk0-v7-cxl">
+                                <rect key="frame" x="141.5" y="313" width="92" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="j5H-9c-0xx" firstAttribute="trailing" secondItem="4sQ-sp-nOm" secondAttribute="trailing" id="LCc-Tw-Y09"/>
+                            <constraint firstItem="j5H-9c-0xx" firstAttribute="bottom" secondItem="4sQ-sp-nOm" secondAttribute="bottom" id="R59-7L-tT2"/>
+                            <constraint firstItem="kk0-v7-cxl" firstAttribute="centerY" secondItem="aq4-H4-eN3" secondAttribute="centerY" id="Sig-UH-503"/>
+                            <constraint firstItem="4sQ-sp-nOm" firstAttribute="leading" secondItem="j5H-9c-0xx" secondAttribute="leading" id="b7o-QF-K5Z"/>
+                            <constraint firstItem="4sQ-sp-nOm" firstAttribute="top" secondItem="aq4-H4-eN3" secondAttribute="top" id="npV-fa-c1S"/>
+                            <constraint firstItem="kk0-v7-cxl" firstAttribute="centerX" secondItem="aq4-H4-eN3" secondAttribute="centerX" id="x6z-4S-JR6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="j5H-9c-0xx"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9HY-Qa-W6Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="354" y="-135"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="gradient-blue" width="375" height="667"/>
+    </resources>
+</document>
